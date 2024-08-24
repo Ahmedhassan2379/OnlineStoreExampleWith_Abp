@@ -1,0 +1,27 @@
+<div >
+    <table class="table" id="tblGrid">
+        <caption>
+        </caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name Arabic</th>
+                <th>Name English</th>
+                <th>Description Arabic</th>
+                <th>Description English</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories;index as i">
+                <td>{{ i + 1 }}</td>
+                <td>{{ category.nameAr }}</td>
+                <td>{{ category.nameEn }}</td>
+                <td>{{ category.descriptionAr }}</td>
+                <td>{{ category.descriptionEn }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="!categories" class="alert alert-info" role="alert">
+    No categories found
+</div>

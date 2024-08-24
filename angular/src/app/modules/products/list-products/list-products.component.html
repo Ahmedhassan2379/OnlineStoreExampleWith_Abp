@@ -1,0 +1,33 @@
+<button class="btn btn-primary" (click)="addProduct()">Add Product</button>
+<br><br>
+
+<table *ngIf="products.length > 0" class="table" id="tblGrid">
+    <caption>
+    </caption>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name Arabic</th>
+            <th>Name English</th>
+            <th>Description Arabic</th>
+            <th>Description English</th>
+            <th>Category Name</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let product of products ;index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ product.nameAr }}</td>
+            <td>{{ product.nameEn }}</td>
+            <td>{{ product.descriptionAr }}</td>
+            <td>{{ product.descriptionEn }}</td>
+            <td>{{ product.categoryNameAr }}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<div *ngIf="!products" class="alert alert-info" role="alert">
+    No Products found
+</div>

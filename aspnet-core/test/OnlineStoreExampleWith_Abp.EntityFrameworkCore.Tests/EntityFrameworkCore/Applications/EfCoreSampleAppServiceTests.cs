@@ -1,0 +1,10 @@
+using OnlineStoreExampleWith_Abp.Samples;
+using Xunit;
+
+namespace OnlineStoreExampleWith_Abp.EntityFrameworkCore.Applications;
+
+[Collection(OnlineStoreExampleWith_AbpTestConsts.CollectionDefinitionName)]
+public class EfCoreSampleAppServiceTests : SampleAppServiceTests<OnlineStoreExampleWith_AbpEntityFrameworkCoreTestModule>
+{
+
+}

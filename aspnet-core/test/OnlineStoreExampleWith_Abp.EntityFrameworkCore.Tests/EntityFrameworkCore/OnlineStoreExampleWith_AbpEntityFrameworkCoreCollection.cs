@@ -1,0 +1,9 @@
+﻿using Xunit;
+
+namespace OnlineStoreExampleWith_Abp.EntityFrameworkCore;
+
+[CollectionDefinition(OnlineStoreExampleWith_AbpTestConsts.CollectionDefinitionName)]
+public class OnlineStoreExampleWith_AbpEntityFrameworkCoreCollection : ICollectionFixture<OnlineStoreExampleWith_AbpEntityFrameworkCoreFixture>
+{
+
+}

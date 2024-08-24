@@ -1,0 +1,8 @@
+﻿using Volo.Abp;
+
+namespace OnlineStoreExampleWith_Abp.EntityFrameworkCore;
+
+public abstract class OnlineStoreExampleWith_AbpEntityFrameworkCoreTestBase : OnlineStoreExampleWith_AbpTestBase<OnlineStoreExampleWith_AbpEntityFrameworkCoreTestModule>
+{
+
+}
